@@ -1,3 +1,4 @@
+package FactoryDesignPattern;
 public abstract class Bike{
     protected String name;
     protected Double price;
@@ -8,6 +9,21 @@ public abstract class Bike{
     public void createBike(){
 
     }
-    
+
+    private void createFrame(){
+
+    }
+
+    private void addWheels(){
+
+    }
+
+    private void addPedals(){
+
+    }
+
+    public double getPrice(){
+
+    }
 
 }
