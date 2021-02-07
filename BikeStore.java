@@ -4,11 +4,13 @@ package FactoryDesignPattern;
  * @author Michael Sana
  */
 public class BikeStore {
+
+    /**
+     * orders the bike from the bike factory
+     * @param type
+     * @return Type of bike
+     */
     public Bike orderBike(String type){
-        Bike bike = createBike(type);
-        return bike;
-    }
-    private Bike createBike(String type){
         Bike bike = null;
         
         if(type.equals("tricycle")){
@@ -17,9 +19,18 @@ public class BikeStore {
         else if(type.equals("strider")){
             bike = new Strider();
         }
-        else if(type.equals("kids bike")){
+        else if(type.equals("kidsBike")){
             bike = new KidsBike();
         }
         return bike;
+    }
+
+    /**
+     * Creates the bike
+     * @param type
+     * @return the created bike
+     */
+    private Bike createBike(String type) {
+    
     }
 }
