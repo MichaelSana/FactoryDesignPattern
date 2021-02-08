@@ -8,7 +8,7 @@ public class BikeStore {
     /**
      * orders the bike from the bike factory
      * @param type
-     * @return Type of bike
+     * @return the bike
      */
     public Bike orderBike(String type){
         Bike bike = null;
