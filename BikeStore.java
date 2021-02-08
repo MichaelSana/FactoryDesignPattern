@@ -31,6 +31,7 @@ public class BikeStore {
      * @return the created bike
      */
     private Bike createBike(String type) {
+        return null;
     
     }
 }
